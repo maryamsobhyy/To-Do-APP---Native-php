@@ -1,0 +1,20 @@
+[
+    {
+        "user_id": 1,
+        "name": "maryam",
+        "email": "maryammmsobheradwan@gmail.com",
+        "password": "$2y$10$v9K1uDk\/FpSmgq55m83B2OqFdrZHVj8Hcd8UKhRPXDoN39\/W9yRK6"
+    },
+    {
+        "user_id": 2,
+        "name": "zein",
+        "email": "zein@gmail.com",
+        "password": "$2y$10$XAPOdEtSg9Vc1NS7HKB3IObqYx4fWui4w1cmNoyPAG9iDdhpo4SZy"
+    },
+    {
+        "user_id": 3,
+        "name": "selim",
+        "email": "selim@gmail.com",
+        "password": "$2y$10$guo4cOKPxyj5\/QO2gWN6OOtabhqrBmSvzWhIN0PiEY33vX6xvueMW"
+    }
+]
