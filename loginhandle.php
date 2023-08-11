@@ -4,11 +4,6 @@ session_start();
 if ($_SERVER['REQUEST_METHOD']=='POST'){
     $email_login=$_POST['email'];
     $password_login=$_POST['password'];
-    $id=$_SESSION['id'];
-    $name=$_SESSION['name'];
-    $email=$_SESSION['email'];
-    $password=$_SESSION['password'];
-    
 
 // validation if email and password exist or not
 // get data fromjson file
@@ -21,18 +16,14 @@ foreach($users as $user){
     $password=$user['password'];
        if($user['email'] == $email_login){
 
-        if(password_verify($password_login,$password)){
-          $login=true;
-          break;
 
-        } } 
-        if ($login){
-            $_SESSION['email']=$email;
-            header("location :./profile.php");
-            exit;
-        }
-        else{
-            $errors['email']="email or password is not exist";}}
+        if(password_verify($password_login,$password)){
+          header("location:./profile.php");
+
+        } }}
+
+$errors['email']="email or password is not exist";
+
 
 if (count($errors)){
     $errors=http_build_query($errors);
